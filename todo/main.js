@@ -15,8 +15,8 @@ draggable.forEach(el => {
 })
 
 function dragOver(e) {
-    if (e.target.classList[0] === 'draggable') return
     e.preventDefault()
+    if (e.target.classList[0] === 'draggable') return
     let dragging = document.querySelector('.dragging')
     let children = [...e.target.children]
     let nearest = null;
